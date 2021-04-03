@@ -80,7 +80,7 @@
         <li
           class="px-2 py-2 cursor-pointer"
           @click="isCollapseMenu = !isCollapseMenu"
-          @change="doubleCount"
+          
         >
           <button
             type="button"
@@ -155,10 +155,10 @@ export default defineComponent({
   name: "Header",
   setup: () => {
     const isCollapseMenu = ref(false);
-    const isMenu = document.getElementById("#menu-items")
-    const doubleCount = computed(() => isCollapseMenu ? console.log(isMenu) : null)
+    // const isMenu = document.getElementById("#menu-items")
+    // const doubleCount = computed(() => isCollapseMenu ? console.log(isMenu) : null)
 
-    return { isCollapseMenu, doubleCount };
+    return { isCollapseMenu };
   },
 });
 </script>
